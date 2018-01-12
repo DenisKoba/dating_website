@@ -1,6 +1,6 @@
-body{
+/*body{
   overflow-x: hidden;
-}
+}*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
 
@@ -153,6 +153,15 @@ $black-transparant: rgba(0, 0, 0, 0.41);
   width:100%;
   padding: 20px 0;
 
+  &__line{
+    display: block;
+    border-bottom: 1px solid #dcdcdc;
+    width: 100%;
+    position: absolute;
+    margin: -30px 0;
+    z-index: -1;
+  }
+
   &__wrapper{
     @include wrapper;
     &_heading{
@@ -206,31 +215,9 @@ $black-transparant: rgba(0, 0, 0, 0.41);
       text-align: center;
       margin: auto;
       width: 200px;
-      padding: 20px 0;
+      padding: 20px 20px;
       background-color: #fff;
       z-index: 10;
-
-      &:after {
-        content: "";
-        width: 1000px;
-        height: 1px;
-        background-color: #dcdcdc;
-        display: block;
-        position: absolute;
-        margin: -9px 0 0 -1030px;
-
-      }
-
-      &:before {
-        content: "";
-        width: 1000px;
-        height: 1px;
-        background-color: #dcdcdc;
-        display: block;
-        position: absolute;
-        margin-left: 224px;
-        margin-top: 12px;
-      }
 
       &_arrow{
         margin: 0 0 0 20px;
@@ -535,6 +522,8 @@ ul{
       background-position: center!important;
       transform: rotate(180deg);
       left: 144px;
+      text-indent: 0;
+      color: transparent;
       &:hover{
         background-position: center;
       }
