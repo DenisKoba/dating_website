@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Julia Dating</title>
+    <link rel="stylesheet" href="scss/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__wrapper">
+        <div class="header__wrapper_menu">
+            <ul>
+                <li class="header__wrapper_menu_logo"><img src="src/julia-logo.png"></li>
+                <li class="header__wrapper_menu_sections">Поиск</li>
+                <li class="header__wrapper_menu_sections">Мои переписки</li>
+                <li class="header__wrapper_menu_sections">Избранное</li>
+                <li class="header__wrapper_menu_sections">Кто смотрел</li>
+            </ul>
+        </div>
+        <div class="header__wrapper_account">
+            <ul>
+                <li class="header__wrapper_account_button subscription">Премиум<img class="info-icon" src="src/subscription_info_icon.png"></li>
+                <li class="header__wrapper_account_button credits"><span>100</span> кредитов</li>
+                <li class="header__wrapper_account_button avatar"><img src="src/dating_avatar.png"></li>
+                <li class="header__wrapper_account_button account-details"><img class="arrow-icon" src="src/dating_arrow_down.png"></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<section class="photo-line">
+    <div class="photo-line__wrapper">
+        <img class="photo-line__wrapper_img" src="src/small/dating_first.png">
+        <img class="photo-line__wrapper_img" src="src/small/dating_second.png">
+        <img class="photo-line__wrapper_img" src="src/small/dating_third.png">
+        <img class="photo-line__wrapper_img" src="src/small/dating_fourth.png">
+        <img class="photo-line__wrapper_img" src="src/small/dating_fifth.png">
+        <img class="photo-line__wrapper_img" src="src/small/dating_six.png">
+        <img class="photo-line__wrapper_img" src="src/small/dating_seventh.png">
+        <img class="photo-line__wrapper_img" src="src/small/dating_eight.png">
+    </div>
+</section>
+<section class="search">
+    <div class="search__wrapper">
+        <h1 class="search__wrapper_heading">Я ищу</h1>
+        <div class="search__wrapper_filters">
+            <select class="search__wrapper_filters_gender">
+                <option value="Девушку">Девушку</option>
+                <option value="Парня">Парня</option>
+            </select>
+            <input class="search__wrapper_filters_city" type="text" value="Amsterdam" data-role="tagsinput"/>
+            <span class="search__wrapper_filters_button">НАЙТИ</span>
+        </div>
+        <div class="search__wrapper_expanded">Расширенный поиск<img class="search__wrapper_expanded_arrow" src="src/dating_arrow_down.png"></div>
+    </div>
+</section>
+<section class="online">
+    <div class="online__wrapper">
+        <div class="online__wrapper_options">
+            <span class="online__wrapper_options_active">Онлайн</span>
+            <span class="online__wrapper_options_new">Новые</span>
+            <span class="online__wrapper_options_popular">Популярные</span>
+        </div>
+        <div class="slider">
+            <div class="slider__slide js-slide"></div>
+            <div class="slider__slide js-slide"></div>
+            <div class="slider__slide js-slide"></div>
+            <div class="slider__slide js-slide"></div>
+            <div class="slider__slide js-slide"></div>
+            <div class="slider__slide js-slide"></div>
+        </div>
+
+        <div id="bx-pager" class="bx-pager">
+            <ul class="bx-pager__wrapper">
+                <li class="bx-pager__wrapper_page"><a class="bx-pager__wrapper_page_number" data-slide-index="0" href="">1</a></li>
+                <li class="bx-pager__wrapper_page"><a class="bx-pager__wrapper_page_number" data-slide-index="1" href="">2</a></li>
+                <li class="bx-pager__wrapper_page"><a class="bx-pager__wrapper_page_number" data-slide-index="2" href="">3</a></li>
+                <li class="bx-pager__wrapper_page"><a class="bx-pager__wrapper_page_number" data-slide-index="3" href="">4</a></li>
+                <li class="bx-pager__wrapper_page"><a class="bx-pager__wrapper_page_number" data-slide-index="4" href="">5</a></li>
+                <li class="bx-pager__wrapper_page"><a class="bx-pager__wrapper_page_number" data-slide-index="5" href="">6</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__wrapper_menu">
+            <ul>
+                <li class="footer__wrapper_menu_sections">Правила</li>
+                <li class="footer__wrapper_menu_sections">Пользовательское соглашение</li>
+                <li class="footer__wrapper_menu_sections">О проекте</li>
+                <li class="footer__wrapper_menu_sections">Обратная связь</li>
+            </ul>
+        </div>
+        <p class="footer__wrapper_copy">©«KIKI». Лучший on-line сервис по поиску спонсоров и содержанок, 2015-2017
+            <br>Администрация не несёт ответственности за размещённые анкеты. Вся информация на сайте предоставлена посетителями.</p>
+    </div>
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
