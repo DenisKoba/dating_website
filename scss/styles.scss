@@ -12,6 +12,10 @@ $gray-color: #777777;
 $red-color: #ff1e6c;
 $black-transparant: rgba(0, 0, 0, 0.41);
 
+@mixin hover{
+  opacity: 0.7;
+}
+
 @mixin wrapper{
   display: block;
   margin: auto;
@@ -37,11 +41,7 @@ $black-transparant: rgba(0, 0, 0, 0.41);
   background-repeat: no-repeat !important;
 }
 
-body {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-}
+
 
 .header{
   width: 100%;
@@ -70,6 +70,11 @@ body {
         font-weight: 400;
         color: $black-color;
         cursor: pointer;
+        transition: .3s;
+        &:hover{
+          @include hover;
+          transition: .3s;
+        }
       }
 
     }
@@ -113,6 +118,11 @@ body {
 
       .avatar{
         margin: 0 0 0 17px;
+        transition: .3s;
+        &:hover{
+          @include hover;
+          transition: .3s;
+        }
       }
 
 
@@ -233,23 +243,58 @@ body {
 
 .online{
   width:100%;
+  background-color: #f0f0f0;
+  padding: 40px 0;
 
   &__wrapper{
 
     @include wrapper;
 
+    &_options{
+      display: inline-block;
+      padding: 3px 0;
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      border: 1px solid $blue-color;
+      border-radius: 5px;
+      color: $blue-color;
+      margin: 0 0 40px 19px;
+      cursor: pointer;
+      &_active{
+        padding: 3px 27px;
+        &:hover{
+          opacity: .8;
+        }
+      }
+      &_new{
+        padding: 3px 27px;
+        background-color: $blue-color;
+        color: $white-color;
+        &:hover{
+          opacity: .8;
+        }
+
+      }
+      &_popular{
+        padding: 3px 24px;
+        &:hover{
+          opacity: .8;
+        }
+      }
+    }
+
     .slider{
 
       &__slide{
         display: inline-block;
-        margin: 0 15px 20px 2px;
         border-radius: 10px;
 
         &_profile{
           width: 270px;
           border-radius: 10px;
           display: inline-block;
-          box-shadow: 0px 1px 5px 2px #e6e6e6;
+          box-shadow: 0 1px 5px 2px #d7d7d7;
+          margin: 0 0 20px 20px;
 
           .absolute{
             .profile-photos{
@@ -260,6 +305,11 @@ body {
               margin-top: 20px;
               margin-left: 17px;
               min-width: 38px;
+              transition: .3s;
+              &:hover{
+                background: rgba(10, 10, 10, 0.76);
+                transition: .3s;
+              }
 
               &__icon{
                 max-width: 100%;
@@ -300,6 +350,11 @@ body {
             .favorite{
               display: inline-flex;
               width: 50%;
+              transition: .4s;
+              &:hover{
+                background-color: $blue-color;
+                transition: .4s;
+              }
 
               &__content{
                 color: #fff;
@@ -336,6 +391,12 @@ body {
               display: inline-flex;
               width: 48%;
               border-left: 1px solid #7aa4fc;
+              transition: .2s;
+              padding: 2px;
+              &:hover{
+                background-color: $blue-color;
+                transition: .2s;
+              }
             }
           }
 
@@ -360,11 +421,79 @@ body {
       }
 
     }
+
+    .bx-pager{
+      margin: auto;
+      width: 360px;
+      &__wrapper{
+        list-style-type: none;
+        display: inline-flex;
+        padding: 13px 44px;
+        border-radius: 5px;
+        background: #fff;
+        &_page{
+          &_number{
+            padding: 7px 13px;
+            font-family: Roboto, sans-serif;
+            color: #c0c0c0;
+            font-size: 16px;
+            margin-right: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
     .bx-wrapper{
       box-shadow: none !important;
+      border: none;
+      background-color: #f0f0f0;
+      margin-bottom: 0;
     }
   }
 }
+
+.footer {
+  width: 100%;
+  display: block;
+  padding-bottom: 20px;
+
+  &__wrapper {
+    @include wrapper;
+
+    &_menu {
+      display: inline-block;
+
+      &_sections {
+        display: inline-block;
+        margin-right: 50px;
+        vertical-align: top;
+        margin-top: 6px;
+        font-family: $font;
+        font-size: 14px;
+        font-weight: 500;
+        color: #777777;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+          transition: .3s;
+          color: #333333;
+        }
+      }
+
+    }
+
+    &_copy{
+      font-family: $font;
+      font-size: 12px;
+      font-weight: 300;
+      color: #777777;
+    }
+  }
+}
+
+
 
 ul{
   padding: 0;
@@ -376,4 +505,45 @@ ul{
 
 .bx-loading{
   display: none !important;
+}
+
+.active{
+  background-color: $blue-color;
+  color: $white-color !important;
+}
+
+.bx-controls{
+  position: absolute;
+  .bx-controls-direction{
+    position: absolute;
+    left: 578px;
+    top: 40px;
+
+    .bx-prev{
+      background: url("../src/arrow-gray.png");
+      background-repeat: no-repeat;
+      background-position: center!important;
+      left: -166px;
+      &:hover{
+        background-position: center;
+      }
+    }
+
+    .bx-next{
+      background: url("../src/arrow-gray.png");
+      background-repeat: no-repeat;
+      background-position: center!important;
+      transform: rotate(180deg);
+      left: 144px;
+      &:hover{
+        background-position: center;
+      }
+    }
+  }
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }

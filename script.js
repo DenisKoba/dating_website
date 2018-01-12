@@ -26,21 +26,24 @@ var data = {
         "rating": "ТОП",
         "name": "Кристиночка, 28",
         "location": "Санкт-Петербург, Россия",
-        "url": "src/dating_big_eight.png"
+        "url": "src/dating_big_eight.png",
+        "href": "#"
     },
     {
         "photo": "3",
         "rating": "ТОП",
         "name": "Диана, 20",
         "location": "Самара, Россия",
-        "url": "src/dating_big_four.png"
+        "url": "src/dating_big_four.png",
+        "href": "#"
     },
     {
         "photo": "145",
         "rating": "ТОП",
         "name": "Аня, 18",
         "location": "Ростов-на-Дону, Россия",
-        "url": "src/dating_big_three.png"
+        "url": "src/dating_big_three.png",
+        "href": "#"
     },
 
         {
@@ -48,41 +51,46 @@ var data = {
             "rating": "ТОП",
             "name": "Анжелика, 27",
             "location": "Чебоксары, Росси",
-            "url": "src/dating_big_one.png"
+            "url": "src/dating_big_one.png",
+            "href": "#"
         },
         {
             "photo": "12",
             "rating": "ТОП",
             "name": "Лариса, 32",
             "location": "Москва, Россия",
-            "url": "src/dating_big_seven.png"
+            "url": "src/dating_big_seven.png",
+            "href": "#"
         },
         {
             "photo": "3",
             "rating": "ТОП",
             "name": "Настя, 21",
             "location": "Зеленоград, Россия",
-            "url": "src/dating_big_five.png"
+            "url": "src/dating_big_five.png",
+            "href": "#"
         },
         {
             "photo": "4",
             "rating": "ТОП",
             "name": "Евгения, 30",
             "location": "Ростов-на-Дону, Россия",
-            "url": "src/dating_big_two.png"
+            "url": "src/dating_big_two.png",
+            "href": "#"
         },
         {
             "photo": "28",
             "rating": "ТОП",
             "name": "Ольга, 25",
             "location": "Казань, Россия",
-            "url": "src/dating_big_six.png"
+            "url": "src/dating_big_six.png",
+            "href": "#"
         }
   ]
 }
 
 for (var i = 0; i < data.response.length; i++) {
-    $(slide).append("<div class='slider__slide js-slide'>" +
+    $(slide).append("<a href='" + data.response[i].href + "'>" + "<div class='slider__slide js-slide'>" +
         "<div class='slider__slide_profile'>" +
         "<div class='absolute'>" +
         "<span class='profile-photos'>" + "<img src='src/dating-camera-icon.png' class='profile-photos__icon'>" + "<p class='profile-photos__number'>" + data.response[i].photo + "</p>"+ "</span>" +
@@ -108,5 +116,5 @@ for (var i = 0; i < data.response.length; i++) {
     "<p class='city-country'>" + data.response[i].location + "</p>" +
     "</div>" +
     "</div>" +
-    "</div>");
+    "</div>" + "</a>");
 }
