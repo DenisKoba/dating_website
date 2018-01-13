@@ -54,6 +54,8 @@ $black-transparant: rgba(0, 0, 0, 0.41);
 }
 
 
+
+
 .header{
   width: 100%;
   display: block;
@@ -693,9 +695,9 @@ body{
   }
 
   #ranged-value{
-    margin: 0 !important;
     padding: 32px 0 10px 0;
     display: block;
+    margin: 0 !important;
   }
 
   .search{
@@ -1185,8 +1187,8 @@ body{
   }
 
   #ranged-value{
-    margin: 0 !important;
     padding: 32px 0 10px 0;
+    margin: 0 !important;
   }
 
   .search{
@@ -1512,7 +1514,7 @@ body{
 
 #ranged-value{
   width: 200px !important;
-  margin: 0 0 0 200px !important;
+  margin: 0 0 0 200px;
   display: inline-block;
   vertical-align: bottom;
   &:before{
