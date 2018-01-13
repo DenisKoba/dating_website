@@ -163,4 +163,19 @@ $favorite.click(function () {
       $(this).find(">:first-child").toggleClass("gold-star");
 })
 
+$(window).scroll( function(){
+    var top_of_object = $('.slider').offset().top;
+    var top_of_window = $(window).scrollTop();
+    if( top_of_window > top_of_object ){
+        $(".arrow-top").fadeIn();
+    }else if( top_of_object > top_of_window ){
+        $(".arrow-top").fadeOut();
+    }
+});
+
+
+$(".arrow-top").click(function () {
+    $('html, body').animate({scrollTop:0}, 'slow');
+    return false;
+})
 
