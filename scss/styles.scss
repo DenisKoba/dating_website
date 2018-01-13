@@ -696,7 +696,7 @@ body{
 
   #ranged-value{
     padding: 32px 0 10px 0;
-    display: block;
+    display: block !important;
     margin: 0 !important;
   }
 
@@ -1515,8 +1515,9 @@ body{
 #ranged-value{
   width: 200px !important;
   margin: 0 0 0 200px;
-  display: inline-block;
+  display: inline-flex;
   vertical-align: bottom;
+
   &:before{
     content:"Возраст";
     font-family: $font;
