@@ -3,6 +3,7 @@
 
 /************************************* Desctop Version ***************************************************/
 
+/*** -------------------------------------------------------- ***/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
 
@@ -42,6 +43,115 @@ $black-transparant: rgba(0, 0, 0, 0.41);
   cursor: pointer !important;
   background-repeat: no-repeat !important;
 }
+
+/************************************ Range Slider ******************************************************/
+
+#ranged-value{
+  width: 200px !important;
+  margin: 0 0 0 200px !important;
+  display: inline-block;
+  vertical-align: bottom;
+  &:before{
+    content:"Возраст";
+    font-family: $font;
+    position: absolute;
+    margin: 0 0 0 -80px;
+  }
+}
+
+.fsslider {
+  position: relative;
+  mn-width: 150px;
+  height: 24px;
+  display: inline-block;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color:#000;
+}
+
+.fsslider{
+  text-align: center;
+  line-height: 24px;
+  font-size: 11px;
+  font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+}
+
+.fsslider > *{
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.fsslider > .fsfull-value, .fsslider > .fssel-value {
+  margin-top: -1px;
+  height: 1px;
+  left: 0;
+  right: 0;
+
+}
+
+.fsslider > .fsfull-value {
+  width: 100%;
+  background: #d8d8d8;
+
+}
+
+.fsslider > .fssel-left, .fsslider > .fssel-right, .fsslider > .fscaret {
+  background: #fff;
+  height: 100%;
+  min-width: 30px;
+  top: 20px;
+  font-family: $font;
+}
+
+.fss-left{
+  &:before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    margin: -13px 0 0 9px;
+    background-color: #366cf7;
+  }
+}
+
+.fss-right{
+  &:before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    margin: -13px 0 0 8px;
+    background-color: #366cf7;
+  }
+}
+
+.fsslider > .fssel-value {
+  /*background: #ff7c19;*/
+  background: $blue-color;
+  height: 1px;
+  right: 50%;
+}
+
+
+.fsslider.fsdisabled {
+  color:#c8c8c8;
+}
+
+.fsslider.fsdisabled > .fssel-value {
+  background: #c8c8c8;
+}
+
+
 
 
 
@@ -191,6 +301,8 @@ $black-transparant: rgba(0, 0, 0, 0.41);
 
       &_city{
         @include filters;
+        background-image: url("../src/dating-website-cross.png");
+        background-position: right 14px;
         padding: 0;
       }
 
@@ -359,6 +471,9 @@ $black-transparant: rgba(0, 0, 0, 0.41);
                 .star{
                   display: inline-block;
                   margin: 0 6px 0 0;
+                  width: 19px;
+                  height: 18px;
+                  background-image: url("../src/dating-empty-star-icon.png");
 
                 }
                 .mail{
@@ -569,6 +684,13 @@ body{
   margin: 5px 0 0 0;
 }
 
+.gold-star{
+  background-image: url("../src/dating-gold-star.png")!important;
+}
+
+
+
+
 /************************************* Responsive mode  ***************************************************/
 
 @media screen and (max-width: 1170px) and (min-width: 600px) {
@@ -608,6 +730,11 @@ body{
           background-repeat: no-repeat;
           background-position: center;
           margin: -3px 0 0 -18px;
+
+          &:active .mobile-dropdown{
+            display: block;
+            transition: 9s;
+          }
 
           &:hover .mobile-dropdown{
             display: block;
@@ -660,6 +787,12 @@ body{
       }
 
     }
+  }
+
+  #ranged-value{
+    margin: 0 !important;
+    padding: 32px 0 10px 0;
+    display: block;
   }
 
   .search{
@@ -727,6 +860,10 @@ body{
           width: 135px;
           text-align: center;
           &:hover{
+            transition: 1s;
+            background:linear-gradient(135deg, #376cf8 0%,#376cf8 100%);
+          }
+          &:active{
             transition: 1s;
             background:linear-gradient(135deg, #376cf8 0%,#376cf8 100%);
           }
@@ -1031,8 +1168,6 @@ body{
   .bx-viewport{
     height: auto !important;
   }
-
-
 }
 
 @media screen and (max-width: 599px) and (min-width: 320px) {
@@ -1075,6 +1210,11 @@ body{
           background-repeat: no-repeat;
           background-position: center;
           margin: -3px 0 0 -18px;
+
+          &:active .mobile-dropdown{
+            display: block;
+            transition: 9s;
+          }
 
           &:hover .mobile-dropdown{
             display: block;
@@ -1139,6 +1279,11 @@ body{
       }
 
     }
+  }
+
+  #ranged-value{
+    margin: 0 !important;
+    padding: 32px 0 10px 0;
   }
 
   .search{

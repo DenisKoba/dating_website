@@ -115,8 +115,8 @@ for (var i = 0; i < data.response.length; i++) {
         "<a href='" + data.response[i].href + "'>" + "<div class='slider__slide_profile_photo'>" + "<img src='" + data.response[i].url +"'>" + "</div>" + "</a>" +
         "<div class='slider__slide_profile_action'>" +
         "<div class='favorite'>" +
-        "<div class='favorite__content'>" +
-        "<img src='src/dating-empty-star-icon.png' class='star'>" +
+        "<div class='favorite__content js-favorite'>" +
+        "<span class='star'></span>" +
         "<span class='selected'>" + "Избранное" + "</span>" +
         "</div>" +
         "</div>" +
@@ -133,6 +133,7 @@ for (var i = 0; i < data.response.length; i++) {
     "</div>" +
     "</div>");
 }
+
 
 $(".js-option").click(function (e) {
     target = e.target;
@@ -154,3 +155,12 @@ $(".js-option-button-online").click(function () {
     $(".new").css("display", "none");
     $(".online-now").css("display", "inline-block");
 })
+
+var $favorite = $(".js-favorite");
+var $star = $(".star");
+
+$favorite.click(function () {
+      $(this).find(">:first-child").toggleClass("gold-star");
+})
+
+
