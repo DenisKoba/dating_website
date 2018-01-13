@@ -250,7 +250,7 @@ $black-transparant: rgba(0, 0, 0, 0.41);
     @include wrapper;
 
     &_img{
-      display: inline-flex;
+      display: inline-block;
       vertical-align: top;
       margin: 10px 0 10px 2px;
       cursor: pointer;
@@ -628,6 +628,10 @@ ul{
   color: $white-color !important;
 }
 
+.bx-viewport{
+  height: auto !important;
+}
+
 .bx-controls{
   position: absolute;
   .bx-controls-direction{
@@ -777,7 +781,7 @@ body{
       }
 
       &_img{
-        display: inline-flex;
+        display: inline-block;
         vertical-align: top;
         margin: 10px 0 10px 2px;
         cursor: pointer;
@@ -1270,7 +1274,7 @@ body{
       }
 
       &_img{
-        display: inline-flex;
+        display: inline-block;
         vertical-align: top;
         margin: 10px 0 10px 2px;
         cursor: pointer;
