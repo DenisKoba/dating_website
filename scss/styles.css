@@ -515,7 +515,6 @@ body {
 @media screen and (max-width: 1170px) and (min-width: 600px) {
   body {
     overflow-x: visible; }
-
   .header__wrapper {
     display: block;
     width: 100%; }
@@ -554,7 +553,6 @@ body {
           position: relative; }
     .header__wrapper_account {
       padding: 0 20px 0 0; }
-
   .photo-line {
     width: 100%;
     padding: 20px 0;
@@ -573,12 +571,10 @@ body {
         margin: 10px 0 10px 2px;
         cursor: pointer;
         max-width: 100px; }
-
   #ranged-value {
     margin: 0 !important;
     padding: 32px 0 10px 0;
     display: block; }
-
   .search {
     width: 100%;
     padding: 20px 0; }
@@ -677,7 +673,6 @@ body {
         z-index: 10; }
         .search__wrapper_expanded_arrow {
           margin: 0 0 0 20px; }
-
   .online {
     width: 100%;
     background-color: #f0f0f0;
@@ -839,7 +834,6 @@ body {
         border: none;
         background-color: #f0f0f0;
         margin-bottom: 0; }
-
   .footer {
     width: 100%;
     display: block;
@@ -870,16 +864,14 @@ body {
         font-weight: 300;
         color: #777777;
         padding: 0 20px; }
-
   .bx-controls-direction {
     display: none !important; }
-
   .bx-viewport {
     height: auto !important; } }
+
 @media screen and (max-width: 599px) and (min-width: 320px) {
   body {
     overflow-x: visible; }
-
   .header__wrapper {
     display: block;
     width: 100%; }
@@ -927,7 +919,6 @@ body {
         display: none; }
       .header__wrapper_account .credits {
         display: none; }
-
   .photo-line {
     width: 100%;
     padding: 20px 0;
@@ -945,11 +936,9 @@ body {
         margin: 10px 0 10px 2px;
         cursor: pointer;
         width: 100px; }
-
   #ranged-value {
     margin: 0 !important;
     padding: 32px 0 10px 0; }
-
   .search__wrapper {
     display: block;
     width: 100%; }
@@ -1003,7 +992,6 @@ body {
         float: none;
         width: 135px;
         text-align: center; }
-
   .online {
     width: 100%;
     background-color: #f0f0f0;
@@ -1166,7 +1154,6 @@ body {
         border: none;
         background-color: #f0f0f0;
         margin-bottom: 0; }
-
   .footer {
     width: 100%;
     display: block;
@@ -1197,11 +1184,7 @@ body {
         font-weight: 300;
         color: #777777;
         padding: 0 20px; }
-
   .bx-controls-direction {
     display: none !important; }
-
   .bx-viewport {
     height: auto !important; } }
-
-/*# sourceMappingURL=styles.css.map */
