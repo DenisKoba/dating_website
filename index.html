@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julia Dating</title>
     <link rel="stylesheet" href="scss/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 </head>
-<body style="overflow-x: hidden">
+<body >
 
 <header class="header">
     <div class="header__wrapper">
         <div class="header__wrapper_menu">
             <ul>
-                <li class="header__wrapper_menu_logo"><img src="src/julia-logo.png"></li>
-                <li class="header__wrapper_menu_sections">Поиск</li>
-                <li class="header__wrapper_menu_sections">Мои переписки</li>
-                <li class="header__wrapper_menu_sections">Избранное</li>
-                <li class="header__wrapper_menu_sections">Кто смотрел</li>
+                <li class="header__wrapper_menu_logo"><img class="logo" src="src/julia-logo.png"></li>
+                <li class="mobile-menu-wrapper">
+                    <ul class="mobile-dropdown">
+                    <li class="header__wrapper_menu_sections">Поиск</li>
+                    <li class="header__wrapper_menu_sections">Мои переписки</li>
+                    <li class="header__wrapper_menu_sections">Избранное</li>
+                    <li class="header__wrapper_menu_sections">Кто смотрел</li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="header__wrapper_account">
@@ -35,25 +39,29 @@
 
 <section class="photo-line">
     <div class="photo-line__wrapper">
-        <img class="photo-line__wrapper_img" src="src/small/dating_first.png">
-        <img class="photo-line__wrapper_img" src="src/small/dating_second.png">
-        <img class="photo-line__wrapper_img" src="src/small/dating_third.png">
-        <img class="photo-line__wrapper_img" src="src/small/dating_fourth.png">
-        <img class="photo-line__wrapper_img" src="src/small/dating_fifth.png">
-        <img class="photo-line__wrapper_img" src="src/small/dating_six.png">
-        <img class="photo-line__wrapper_img" src="src/small/dating_seventh.png">
-        <img class="photo-line__wrapper_img" src="src/small/dating_eight.png">
+        <div class="mobile-photo-line">
+            <img class="photo-line__wrapper_img" src="src/small/dating_first.png">
+            <img class="photo-line__wrapper_img" src="src/small/dating_second.png">
+            <img class="photo-line__wrapper_img" src="src/small/dating_third.png">
+            <img class="photo-line__wrapper_img" src="src/small/dating_fourth.png">
+            <img class="photo-line__wrapper_img" src="src/small/dating_fifth.png">
+            <img class="photo-line__wrapper_img" src="src/small/dating_six.png">
+            <img class="photo-line__wrapper_img" src="src/small/dating_seventh.png">
+            <img class="photo-line__wrapper_img" src="src/small/dating_eight.png">
+        </div>
     </div>
 </section>
 <section class="search">
     <div class="search__wrapper">
         <h1 class="search__wrapper_heading">Я ищу</h1>
         <div class="search__wrapper_filters">
-            <select class="search__wrapper_filters_gender">
-                <option value="Девушку">Девушку</option>
-                <option value="Парня">Парня</option>
-            </select>
-            <input class="search__wrapper_filters_city" type="text" value="Amsterdam" data-role="tagsinput"/>
+            <div class="mobile-serch-filters">
+                <select class="search__wrapper_filters_gender">
+                    <option value="Девушку">Девушку</option>
+                    <option value="Парня">Парня</option>
+                </select>
+                <input class="search__wrapper_filters_city" type="text" value="Amsterdam" data-role="tagsinput"/>
+            </div>
             <span class="search__wrapper_filters_button">НАЙТИ</span>
         </div>
 
@@ -63,18 +71,18 @@
 </section>
 <section class="online">
     <div class="online__wrapper">
-        <div class="online__wrapper_options">
-            <span class="online__wrapper_options_active">Онлайн</span>
-            <span class="online__wrapper_options_new">Новые</span>
-            <span class="online__wrapper_options_popular">Популярные</span>
+        <div class="online__wrapper_options js-option">
+            <span class="online__wrapper_options_active js-option-button js-option-button-online" >Онлайн</span>
+            <span class="online__wrapper_options_new js-option-button js-option-button-new active-option-button" >Новые</span>
+            <span class="online__wrapper_options_popular js-option-button js-option-button-popular" >Популярные</span>
         </div>
         <div class="slider">
-            <div class="slider__slide js-slide"></div>
-            <div class="slider__slide js-slide"></div>
-            <div class="slider__slide js-slide"></div>
-            <div class="slider__slide js-slide"></div>
-            <div class="slider__slide js-slide"></div>
-            <div class="slider__slide js-slide"></div>
+            <div class="slider__slide"><div class="slide-wrapper js-slide"></div></div>
+            <div class="slider__slide"><div class="slide-wrapper js-slide"></div></div>
+            <div class="slider__slide"><div class="slide-wrapper js-slide"></div></div>
+            <div class="slider__slide"><div class="slide-wrapper js-slide"></div></div>
+            <div class="slider__slide"><div class="slide-wrapper js-slide"></div></div>
+            <div class="slider__slide"><div class="slide-wrapper js-slide"></div></div>
         </div>
 
         <div id="bx-pager" class="bx-pager">
