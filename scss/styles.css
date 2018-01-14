@@ -1,14 +1,6 @@
 @charset "UTF-8";
 /************************************* Desctop Version ***************************************************/
-/*** -------------------------------------------------------- ***/
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
-/************************************ Range Slider ******************************************************/
-.arrow-top {
-  position: fixed;
-  bottom: 269px;
-  right: 50px;
-  display: none; }
-
 .header {
   width: 100%;
   display: block;
@@ -432,10 +424,13 @@ body {
 .gold-star {
   background-image: url("../src/dating-gold-star.png") !important; }
 
-/************************************* Responsive mode  ***************************************************/
+.arrow-top {
+  bottom: 270px;
+  right: 50px;
+  position: fixed; }
+
+/************************************* Responsive Mode Tablet  ***************************************************/
 @media screen and (max-width: 1170px) and (min-width: 600px) {
-  body {
-    overflow-x: visible; }
   .header__wrapper {
     display: block;
     width: 100%; }
@@ -493,10 +488,6 @@ body {
         margin: 10px 2px 0 2px;
         cursor: pointer;
         max-width: 100px; }
-  #ranged-value {
-    padding: 32px 0 10px 0;
-    display: block !important;
-    margin: 0 !important; }
   .search {
     width: 100%;
     padding: 20px 0; }
@@ -791,11 +782,14 @@ body {
   .bx-controls-direction {
     display: none !important; }
   .bx-viewport {
-    height: auto !important; } }
+    height: auto !important; }
+  #ranged-value {
+    padding: 32px 0 10px 0;
+    display: block !important;
+    margin: 0 !important; } }
 
+/************************************* Responsive Mode Mobile  ***************************************************/
 @media screen and (max-width: 599px) and (min-width: 320px) {
-  body {
-    overflow-x: visible; }
   .header__wrapper {
     display: block;
     width: 100%; }
@@ -860,9 +854,6 @@ body {
         margin: 10px 2px 0 2px;
         cursor: pointer;
         width: 100px; }
-  #ranged-value {
-    padding: 32px 0 10px 0;
-    margin: 0 !important; }
   .search__wrapper {
     display: block;
     width: 100%; }
@@ -1114,20 +1105,26 @@ body {
     display: none !important; }
   .bx-viewport {
     height: auto !important; }
+  #ranged-value {
+    padding: 32px 0 10px 0;
+    margin: 0 !important; }
   .arrow-top {
     bottom: 50px;
     right: 20px; } }
 
+/************************************ Range Slider ******************************************************/
 #ranged-value {
   width: 200px !important;
-  margin: 0 0 0 200px;
+  margin: -30px 0 0 0px;
   display: inline-flex;
   vertical-align: bottom; }
   #ranged-value:before {
     content: "Возраст";
     font-family: "Roboto", sans-serif;
+    color: gray;
     position: absolute;
-    margin: 0 0 0 -80px; }
+    margin: -20px 0 0 0px;
+    font-size: 12px; }
 
 .fsslider {
   position: relative;
