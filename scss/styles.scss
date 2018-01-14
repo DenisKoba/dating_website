@@ -1063,6 +1063,11 @@ body{
     padding: 32px 0 10px 0;
     display: block !important;
     margin: 0 !important;
+    &:before{
+      margin: -20px 0 0 0px !important;
+      font-size: 12px;
+      color: gray;
+    }
   }
 }
 
@@ -1498,7 +1503,13 @@ body{
 
   #ranged-value{
     padding: 32px 0 10px 0;
+    display: block !important;
     margin: 0 !important;
+    &:before{
+      margin: -20px 0 0 0px !important;
+      font-size: 12px;
+      color: gray;
+    }
   }
 
   .arrow-top{
@@ -1516,17 +1527,15 @@ body{
 
 #ranged-value{
   width: 200px !important;
-  margin: -30px 0 0 0px;
+  margin: -30px 0 0 160px;
   display: inline-flex;
   vertical-align: bottom;
 
   &:before{
     content:"Возраст";
     font-family: $font;
-    color: gray;
     position: absolute;
-    margin: -20px 0 0 0px;
-    font-size: 12px;
+    margin: 0 0 0 -72px;
   }
 }
 
