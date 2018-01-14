@@ -484,12 +484,13 @@ body {
       .photo-line__wrapper .mobile-photo-line {
         display: block;
         padding: 0 20px;
+        text-align: center;
         margin: auto;
         width: fit-content; }
       .photo-line__wrapper_img {
         display: inline-block;
         vertical-align: top;
-        margin: 10px 0 10px 2px;
+        margin: 10px 2px 0 2px;
         cursor: pointer;
         max-width: 100px; }
   #ranged-value {
@@ -628,15 +629,15 @@ body {
         display: inline-block;
         border-radius: 10px; }
         .online__wrapper .slider__slide .slide-wrapper {
-          width: 80%;
           display: block;
-          margin: auto; }
+          margin: auto;
+          text-align: center; }
         .online__wrapper .slider__slide_profile {
           width: 270px;
           border-radius: 10px;
           display: inline-block;
           box-shadow: 0 1px 5px 2px #d7d7d7;
-          margin: 0 0 20px 15px; }
+          margin: 0 7px 20px 7px; }
           .online__wrapper .slider__slide_profile .absolute .profile-photos {
             display: block;
             background: rgba(0, 0, 0, 0.41);
@@ -712,27 +713,29 @@ body {
               .online__wrapper .slider__slide_profile_action .message:hover {
                 background-color: #366cf7;
                 transition: .2s; }
-          .online__wrapper .slider__slide_profile_details .name-age {
-            padding: 0 0 0 20px;
-            font-size: 18px;
-            font-family: "Roboto", sans-serif;
-            color: #366cf7;
-            margin: 12px 0 6px 0;
-            display: inline-flex; }
-          .online__wrapper .slider__slide_profile_details .online-indicator {
-            display: inline-flex;
-            vertical-align: top;
-            height: 10px;
-            width: 10px;
-            background: #01f501;
-            border-radius: 50%;
-            margin: 20px 0 0 10px; }
-          .online__wrapper .slider__slide_profile_details .city-country {
-            padding: 0 0 0 20px;
-            font-size: 14px;
-            font-family: "Roboto", sans-serif;
-            color: #333333;
-            margin: 0 0 12px 0; }
+          .online__wrapper .slider__slide_profile_details {
+            text-align: left !important; }
+            .online__wrapper .slider__slide_profile_details .name-age {
+              padding: 0 0 0 20px;
+              font-size: 18px;
+              font-family: "Roboto", sans-serif;
+              color: #366cf7;
+              margin: 12px 0 6px 0;
+              display: inline-flex; }
+            .online__wrapper .slider__slide_profile_details .online-indicator {
+              display: inline-flex;
+              vertical-align: top;
+              height: 10px;
+              width: 10px;
+              background: #01f501;
+              border-radius: 50%;
+              margin: 20px 0 0 10px; }
+            .online__wrapper .slider__slide_profile_details .city-country {
+              padding: 0 0 0 20px;
+              font-size: 14px;
+              font-family: "Roboto", sans-serif;
+              color: #333333;
+              margin: 0 0 12px 0; }
       .online__wrapper .bx-pager {
         margin: auto;
         width: 300px; }
@@ -849,12 +852,12 @@ body {
       width: 100%; }
       .photo-line__wrapper .mobile-photo-line {
         display: block;
-        width: 90%;
+        text-align: center;
         margin: auto; }
       .photo-line__wrapper_img {
         display: inline-block;
         vertical-align: top;
-        margin: 10px 0 10px 2px;
+        margin: 10px 2px 0 2px;
         cursor: pointer;
         width: 100px; }
   #ranged-value {
@@ -948,15 +951,15 @@ body {
         display: inline-block;
         border-radius: 10px; }
         .online__wrapper .slider__slide .slide-wrapper {
-          width: 80%;
           display: block;
-          margin: auto; }
+          margin: auto;
+          text-align: center; }
         .online__wrapper .slider__slide_profile {
           width: 270px;
           border-radius: 10px;
           display: inline-block;
           box-shadow: 0 1px 5px 2px #d7d7d7;
-          margin: 0 0 20px 15px; }
+          margin: 0 7px 20px 7px; }
           .online__wrapper .slider__slide_profile .absolute .profile-photos {
             display: block;
             background: rgba(0, 0, 0, 0.41);
@@ -1032,27 +1035,29 @@ body {
               .online__wrapper .slider__slide_profile_action .message:hover {
                 background-color: #366cf7;
                 transition: .2s; }
-          .online__wrapper .slider__slide_profile_details .name-age {
-            padding: 0 0 0 20px;
-            font-size: 18px;
-            font-family: "Roboto", sans-serif;
-            color: #366cf7;
-            margin: 12px 0 6px 0;
-            display: inline-flex; }
-          .online__wrapper .slider__slide_profile_details .online-indicator {
-            display: inline-flex;
-            vertical-align: top;
-            height: 10px;
-            width: 10px;
-            background: #01f501;
-            border-radius: 50%;
-            margin: 20px 0 0 10px; }
-          .online__wrapper .slider__slide_profile_details .city-country {
-            padding: 0 0 0 20px;
-            font-size: 14px;
-            font-family: "Roboto", sans-serif;
-            color: #333333;
-            margin: 0 0 12px 0; }
+          .online__wrapper .slider__slide_profile_details {
+            text-align: left !important; }
+            .online__wrapper .slider__slide_profile_details .name-age {
+              padding: 0 0 0 20px;
+              font-size: 18px;
+              font-family: "Roboto", sans-serif;
+              color: #366cf7;
+              margin: 12px 0 6px 0;
+              display: inline-flex; }
+            .online__wrapper .slider__slide_profile_details .online-indicator {
+              display: inline-flex;
+              vertical-align: top;
+              height: 10px;
+              width: 10px;
+              background: #01f501;
+              border-radius: 50%;
+              margin: 20px 0 0 10px; }
+            .online__wrapper .slider__slide_profile_details .city-country {
+              padding: 0 0 0 20px;
+              font-size: 14px;
+              font-family: "Roboto", sans-serif;
+              color: #333333;
+              margin: 0 0 12px 0; }
       .online__wrapper .bx-pager {
         margin: auto;
         width: 300px; }
@@ -1108,7 +1113,10 @@ body {
   .bx-controls-direction {
     display: none !important; }
   .bx-viewport {
-    height: auto !important; } }
+    height: auto !important; }
+  .arrow-top {
+    bottom: 50px;
+    right: 20px; } }
 
 #ranged-value {
   width: 200px !important;

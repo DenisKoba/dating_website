@@ -677,6 +677,7 @@ body{
       .mobile-photo-line{
         display: block;
         padding: 0 20px;
+        text-align: center;
         margin: auto;
         width: fit-content;
       }
@@ -684,7 +685,7 @@ body{
       &_img{
         display: inline-block;
         vertical-align: top;
-        margin: 10px 0 10px 2px;
+        margin: 10px 2px 0 2px;
         cursor: pointer;
         max-width: 100px;
 
@@ -844,9 +845,9 @@ body{
           border-radius: 10px;
 
           .slide-wrapper{
-            width: 80%;
             display: block;
             margin: auto;
+            text-align: center;
           }
 
           &_profile{
@@ -854,7 +855,7 @@ body{
             border-radius: 10px;
             display: inline-block;
             box-shadow: 0 1px 5px 2px #d7d7d7;
-            margin: 0 0 20px 15px;
+            margin: 0 7px 20px 7px;
 
             .absolute{
               .profile-photos{
@@ -961,6 +962,7 @@ body{
             }
 
             &_details{
+              text-align: left !important;
               .name-age{
                 padding: 0 0 0 20px;
                 font-size: 18px;
@@ -968,6 +970,7 @@ body{
                 color: $blue-color;
                 margin: 12px 0 6px 0;
                 display: inline-flex;
+
               }
 
               .online-indicator{
@@ -1170,14 +1173,14 @@ body{
 
       .mobile-photo-line{
         display: block;
-        width: 90%;
+        text-align: center;
         margin: auto;
       }
 
       &_img{
         display: inline-block;
         vertical-align: top;
-        margin: 10px 0 10px 2px;
+        margin: 10px 2px 0 2px;
         cursor: pointer;
         width: 100px;
 
@@ -1278,9 +1281,9 @@ body{
           border-radius: 10px;
 
           .slide-wrapper{
-            width: 80%;
             display: block;
             margin: auto;
+            text-align: center;
           }
 
           &_profile{
@@ -1288,7 +1291,7 @@ body{
             border-radius: 10px;
             display: inline-block;
             box-shadow: 0 1px 5px 2px #d7d7d7;
-            margin: 0 0 20px 15px;
+            margin: 0 7px 20px 7px;
 
             .absolute{
               .profile-photos{
@@ -1395,6 +1398,7 @@ body{
             }
 
             &_details{
+              text-align: left !important;
               .name-age{
                 padding: 0 0 0 20px;
                 font-size: 18px;
@@ -1506,6 +1510,11 @@ body{
 
   .bx-viewport{
     height: auto !important;
+  }
+
+  .arrow-top{
+    bottom: 50px;
+    right: 20px;
   }
 
 
