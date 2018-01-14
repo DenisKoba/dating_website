@@ -427,7 +427,8 @@ body {
 .arrow-top {
   bottom: 270px;
   right: 50px;
-  position: fixed; }
+  position: fixed;
+  display: none; }
 
 /************************************* Responsive Mode Tablet  ***************************************************/
 @media screen and (max-width: 1170px) and (min-width: 600px) {
